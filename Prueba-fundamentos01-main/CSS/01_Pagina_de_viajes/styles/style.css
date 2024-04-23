@@ -1,0 +1,276 @@
+/* Estilos de pagina de viajes  
+*{
+    outline: solid rgb(0, 0, 0);
+}
+*/
+body { /* Selección de body */
+font-family:Arial, sans-serif ; /* Cambia tipografia */
+margin: 0; /* Elimina todo el margen predefinido */
+padding: 0; /* Elimina todo el relleno de los elementos */
+background-color: #465ddf;;
+}
+/* Acá viene el estilo de una clase container */
+.container {
+    width: 80%; /* Establece el ancho del contenedor en un 80% */
+    margin: 0 auto; /* Centra horizontalmente el contenedor */
+}
+/* Estilo de encabezado */
+header {
+    background-color: #333; /* Establece el color de fondo */
+    color: #fff; /* Establece el color del texto */
+    padding: 20px 0; /* Añade relleno superior e inferior */
+}
+
+header h1{
+    margin: 0; /* Elimina el margen por defecto del título */
+}
+/* Estilo de elemento de lista */
+nav ul li{
+    display:inline; /* Alinea los elementos */
+    margin-right: 20px; /* Margen hacia la derecha */
+}
+/* Estilo a elementos de vinculo ancla de navegacion */
+nav ul li a{
+    color:#fff; /* Color a elemento Anchor */
+    text-decoration: none; /* Quita subrayado de enlaces */
+}
+
+section {
+    padding: 40px 0; /* Añade relleno superior e inferior  */
+}
+
+#banner{
+    background-image: url('https://assets.airtrfx.com/media-em/h2/cities/temuco-ZCO.jpg');/*Establece la imagen de fondo del banner*/
+    background-size: cover; /* Ajusta la imagen al área del banner */
+    color: #fff; /* Establece color del texto */
+    text-align: center; /* Centra el texto del banner*/
+    padding: 100px 0; /* Define relleno superior e inferior */
+}
+#banner h2{
+    font-size: 36px; /* Establece tamaño de h2 */
+}
+#banner p{
+    font-size: 18px; /* Establece tamaño de p */
+    margin-bottom: 20px; /* Define margen inferior*/
+}
+
+.btn{
+    background-color: #007bff; /* Color fondo boton */
+    color: #fff; /* Color del texto del boton */
+    padding: 10px 20px; /* Relleno del boton */
+    text-decoration: none; /* Quita decoración de enlace*/
+}
+/* Estilo cuando pasa puntero sobre el boton */
+.btn:hover {
+    background-color: #0056b3; /* Establece color de fondo en hover boton */
+}
+
+.destinos-container{
+    display: flex; /* Utiliza flexbox para alinear elementos */
+    justify-content: space-between; /* Distribuye uniformemenente los elementos */
+    flex-wrap: wrap; /* Si los elementos no caben en la misma línea, agrega una nueva linea con estos elementos extras */
+}
+.destino{
+    width: calc(33.33% - 20px); /* Establece el ancho de cada destino menos el espacio entre los destinos */
+    margin-bottom: 20px; /* Define el margen inferior*/
+    text-align: center; /* Centra el texto */
+}
+
+.destino img{
+    width: 100%; /* Establece el ancho de la imagen ajustandola al elemento que la contiene */
+    border-radius: 8px; /* Agrega esquinas redondeadas */
+}
+.destino h3{
+    margin-top:10px; /* Agrega distancia entre imagen y h3 */
+}
+.destino p{
+    margin-top:10px; /* Agrega distancia superior entre h3 y p */
+}
+
+footer{
+    background-color: #333; /* Establece color fondo de footer */
+    color: #fff; /* Establece color de texto de footer */
+    text-align: center; /* Centra el texto */
+    padding: 20px 0; /* Añade relleno superior e inferior */
+}
+
+/* Aqui va el estilo del Formulario de contacto */
+
+#contacto{
+    padding:40px 0;
+}
+
+#contacto .container{
+    text-align: center;
+}
+
+#contacto h2{
+    margin-bottom: 20px;
+}
+#contacto form{
+    max-width: 500px; /* Establece el ancho máximo del elemento formulario */
+    margin: 0 auto; /* Centra horizontalmente dentro del contenedor */
+    padding:20px;
+    background-color: rgb(183, 194, 192);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Establece una sombra alrededor del formulario */
+}
+#contacto label{
+    display: block; /* Etiquetas en bloques */
+    margin-bottom: 10px;
+    font-weight: bold; /* Establece fuente en negrita */
+}
+#contacto input, #contacto textarea{
+width: 100%;
+padding:10px;
+margin-bottom: 20px;
+border: 1px solid #fff;
+border-radius: 5px;
+box-sizing: border-box; /* Incluye el padding y el borde del ancho dentro del elemento que lo contiene */
+}
+
+#contacto textarea{
+    resize: vertical; /* Permite redimensionar el area del texto verticalmente*/
+}
+
+/* Apartado de turismo inicio, para evitar la confucion esta este texto tan largo que actuara como si fuera una*/
+
+#turismo{
+    padding:40px 0;
+}
+
+#turismo .paquetes-container{
+    text-align: center;
+}
+
+#turismo h2{
+    margin-bottom: 20px;
+}
+#turismo form{
+    max-width: 675px; /* Establece el ancho máximo del elemento formulario */
+    margin: 0 auto; /* Centra horizontalmente dentro del contenedor */
+    padding:20px;
+    background-color: rgb(183, 194, 192);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Establece una sombra alrededor del formulario */
+}
+#turismo label{
+    display: block; /* Etiquetas en bloques */
+    margin-bottom: 10px;
+    font-weight: bold; /* Establece fuente en negrita */
+}
+#turismo input{
+width: 25%;
+padding:10px;
+margin-bottom: 20px;
+border: 1px solid #fff;
+border-radius: 5px;
+box-sizing: border-box; /* Incluye el padding y el borde del ancho dentro del elemento que lo contiene */
+}
+
+#turismo textarea{
+    width: 10%;
+    padding:10px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-sizing: border-box; /* Incluye el padding y el borde del ancho dentro del elemento que lo contiene */
+    }
+
+#turismo textarea{
+    resize: vertical; /* Permite redimensionar el area del texto verticalmente*/
+    
+}
+
+/* Destinos comienzo etc etc*/
+
+#destinos{
+    text-align: center;
+    font-size: 20px;
+}
+
+.contenedor {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    box-shadow: 0 0 3px rgb(156, 156, 156);
+}
+
+#destino{
+    margin-left: 50px;
+    text-decoration-color: #000000;
+}
+
+.imagen-destino {
+    width: 40%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la relación de aspecto */
+    max-width: 250px; /* Ancho máximo de la imagen para evitar que se estire demasiado */
+}
+
+.precio-fecha {
+    margin-top: 20px;
+    padding: 10px; /* Reducir el espacio interno */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #0077c8;
+    background-color: #f9f9f9;
+    max-width: 250px; /* Limitar el ancho máximo */
+    margin-left: 60px; /* Agrega un margen izquierdo de 20px */
+    font-weight: bold; /* agrega grosor al texto */
+    font-style: italic;
+    letter-spacing: 1px; /* Espacio entre las letras */
+}
+
+.precio-fecha .precio,
+.precio-fecha .fecha {
+    font-size: 18px; /* Reducir el tamaño del texto */
+    margin-bottom: 5px; /* Reducir el espacio entre líneas */
+}
+
+.oculto {
+    display: none;
+}
+
+.reserva-label {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Ocultar los formularios por defecto */
+.formulario-contenido {
+    display: none;
+}
+
+/* Mostrar el formulario cuando el checkbox asociado está marcado */
+.oculto:checked + .formulario-contenido {
+    display: block;
+}
+
+.banner {
+    background-image: url('https://www.globalia.com/wp-content/uploads/2020/03/avion-vuelos-menos-contaminantes-globalia-wakalua-1500x500.jpg'); /* Imagen del banner */
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Altura del banner */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.banner-texto {
+    padding: 20px;
+}
+
+.banner-texto h1 {
+    font-size: 48px; /* Tamaño del título */
+}
+
+.banner-texto p {
+    font-size: 24px; /* Tamaño del subtítulo */
+}
